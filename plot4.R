@@ -1,5 +1,3 @@
-coursera-Exploratory-Data-Analysis-assignment-1
-===============================================
 data1<-read.table(file="D:/household_power_consumption.txt", header=TRUE, sep=";")
 
 #bind date and time and make it to timestamp and change time form string to timestamp and tring date to date

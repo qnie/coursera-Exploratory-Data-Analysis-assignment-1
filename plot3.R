@@ -1,8 +1,6 @@
-coursera-Exploratory-Data-Analysis-assignment-1
-===============================================
 data1<-read.table(file="D:/household_power_consumption.txt", header=TRUE, sep=";")
 
-
+#bind date and time and make it to timestamp and change time form string to timestamp and tring date to date
 data1$Time = strptime(paste(data1$Date, data1$Time, sep=" "), format="%d/%m/%Y %H:%M:%S")
 data1$Date = as.Date(data1$Date, "%d/%m/%Y")
 

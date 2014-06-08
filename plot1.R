@@ -1,5 +1,3 @@
-coursera-Exploratory-Data-Analysis-assignment-1
-===============================================
 data1<-read.table(file="D:/household_power_consumption.txt", header=TRUE, sep=";",na.strings="?")
 data1$Date<-as.Date(strptime(data1$Date, format = "%d/%m/%Y"))
 
